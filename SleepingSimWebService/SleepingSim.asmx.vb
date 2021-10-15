@@ -3,8 +3,14 @@ Imports System.Web.Services.Protocols
 Imports System.Data.SqlClient
 Imports System.ComponentModel
 Imports Newtonsoft.Json
-
+Imports System.Net
+Imports System.IO
+Imports System.Xml
 Imports System.Web.Script.Serialization
+Imports System.Net.ServicePointManager
+
+
+
 
 ' To allow this Web Service to be called from script, using ASP.NET AJAX, uncomment the following line.
 ' <System.Web.Script.Services.ScriptService()> _
@@ -19,6 +25,30 @@ Public Class SleepingSim
         Dim msisdn As String = ""
         Dim result As New clsResult
         result = GetReservedNumber()
+
+        Context.Response.Clear()
+        Context.Response.ContentType = "application/json"
+        HttpContext.Current.Response.Write(JsonConvert.SerializeObject(result))
+
+    End Sub
+    <WebMethod()>
+    Public Sub SleepingSwapInsert()
+        Dim result As New clsResult
+        Dim simInfo As New clsSimInfo
+
+        Dim JsonInput = New StreamReader(HttpContext.Current.Request.InputStream)
+        period = JsonConvert.DeserializeObject(Of clsPeriod)(JsonInput.ReadToEnd)
+
+        If (simInfo.Msisdn <> "" And simInfo.IMSI <> "") Then
+            result.Code = "0"
+            result.Description = "Successful"
+            result.stats = SleepingSwapInsert(simInfo.Msisdn, simInfo.IMSI)
+        Else
+            result.Code = "103"
+            result.Description = "Failed"
+
+        End If
+
 
         Context.Response.Clear()
         Context.Response.ContentType = "application/json"

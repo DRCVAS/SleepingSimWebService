@@ -35,3 +35,10 @@ C:\Users\omadi\Documents\Visual Studio 2015\Projects\WCFService\SleepingSimWebSe
 C:\Users\omadi\Documents\Visual Studio 2015\Projects\WCFService\SleepingSimWebService\SleepingSimWebService\obj\Debug\SleepingSimWebService.dll
 C:\Users\omadi\Documents\Visual Studio 2015\Projects\WCFService\SleepingSimWebService\SleepingSimWebService\obj\Debug\SleepingSimWebService.xml
 C:\Users\omadi\Documents\Visual Studio 2015\Projects\WCFService\SleepingSimWebService\SleepingSimWebService\obj\Debug\SleepingSimWebService.pdb
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\obj\Debug\SleepingSimWebService.vbprojAssemblyReference.cache
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\obj\Debug\SleepingSimWebService.Resources.resources
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\obj\Debug\SleepingSimWebService.vbproj.GenerateResource.cache
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\obj\Debug\SleepingSimWebService.vbproj.CoreCompileInputs.cache
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\obj\Debug\SleepingSimWebService.dll
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\obj\Debug\SleepingSimWebService.xml
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\obj\Debug\SleepingSimWebService.pdb
