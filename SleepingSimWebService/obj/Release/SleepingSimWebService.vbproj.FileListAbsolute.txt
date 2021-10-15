@@ -34,3 +34,41 @@ C:\Users\omadi\Documents\Visual Studio 2015\Projects\WCFService\SleepingSimWebSe
 C:\Users\omadi\Documents\Visual Studio 2015\Projects\WCFService\SleepingSimWebService\SleepingSimWebService\obj\Release\SleepingSimWebService.dll
 C:\Users\omadi\Documents\Visual Studio 2015\Projects\WCFService\SleepingSimWebService\SleepingSimWebService\obj\Release\SleepingSimWebService.xml
 C:\Users\omadi\Documents\Visual Studio 2015\Projects\WCFService\SleepingSimWebService\SleepingSimWebService\obj\Release\SleepingSimWebService.pdb
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\bin\ApplicationInsights.config
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\bin\roslyn\csc.exe
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\bin\roslyn\System.Collections.Immutable.dll
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\bin\roslyn\System.Reflection.Metadata.dll
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\bin\roslyn\vbc.exe
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\bin\roslyn\VBCSCompiler.exe
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\bin\roslyn\VBCSCompiler.exe.config
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\bin\SleepingSimWebService.dll.config
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\bin\SleepingSimWebService.dll
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\bin\SleepingSimWebService.pdb
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\bin\SleepingSimWebService.xml
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\bin\Microsoft.AI.Agent.Intercept.dll
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\bin\Microsoft.AI.DependencyCollector.dll
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\bin\Microsoft.AI.Web.dll
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\bin\Microsoft.AI.WindowsServer.dll
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\bin\Microsoft.ApplicationInsights.dll
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\bin\Microsoft.AI.DependencyCollector.xml
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\bin\Microsoft.AI.Web.xml
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\bin\Microsoft.AI.WindowsServer.xml
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\bin\Microsoft.ApplicationInsights.xml
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\obj\Release\SleepingSimWebService.Resources.resources
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\obj\Release\SleepingSimWebService.vbproj.GenerateResource.cache
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\obj\Release\SleepingSimWebService.vbproj.CoreCompileInputs.cache
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\obj\Release\SleepingSimWebService.vbproj.CopyComplete
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\obj\Release\SleepingSimWebService.dll
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\obj\Release\SleepingSimWebService.xml
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\obj\Release\SleepingSimWebService.pdb

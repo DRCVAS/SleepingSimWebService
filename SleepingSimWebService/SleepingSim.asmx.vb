@@ -42,7 +42,7 @@ Public Class SleepingSim
         If (simInfo.OldMsisdn <> "" And simInfo.IMSI <> "") Then
             result.Code = "0"
             result.Description = "Successful"
-            result.stats = SleepingSwapInsert(simInfo.OldMsisdn, simInfo.IMSI)
+            result.ReservedMsisdn = SleepingSwapInsert(simInfo.OldMsisdn, simInfo.IMSI)
         Else
             result.Code = "103"
             result.Description = "Failed"
@@ -106,8 +106,9 @@ Public Class SleepingSim
         End Try
         Return reserved
     End Function
-    Private Function SleepingSwapInsert(Msisdn As String, IMSI As String) As clsSimInfo
+    Private Function SleepingSwapInsert(Msisdn As String, IMSI As String) As String
         Dim stats As New clsSimInfo
+        Dim strstats As String = ""
         Dim StrSQL As String = "exec [simSwapweb].[dbo].[sleepingSwapInsert_20211012] '" & Msisdn & "','" & IMSI & "'"
         Dim cn As New SqlConnection(connectionStringVas22)
         Dim cmd As New SqlCommand
@@ -121,13 +122,7 @@ Public Class SleepingSim
             Dtstats.Load(cmd.ExecuteReader())
             If Dtstats.Rows.Count > 0 Then
                 For Each Dt In Dtstats.Rows
-
-
-
-                    stats.OldMsisdn = Dt.Item("OldMsisdn").ToString
-                    stats.Newmsisdn = Dt.Item("NewMsisdn").ToString
-                    stats.IMSI = Dt.Item("IMSI").ToString
-
+                    strstats = Dt.Item("NewMsisdn").ToString
                 Next
 
             End If
@@ -140,6 +135,6 @@ Public Class SleepingSim
         Catch ex As Exception
 
         End Try
-        Return stats
+        Return strstats
     End Function
 End Class
