@@ -34,15 +34,15 @@ Public Class SleepingSim
     <WebMethod()>
     Public Sub SleepingSwapInsert()
         Dim result As New clsResult
-        Dim simInfo As New clsSimInfo
+        Dim simInfo As New clssiminfo
 
         Dim JsonInput = New StreamReader(HttpContext.Current.Request.InputStream)
-        period = JsonConvert.DeserializeObject(Of clsPeriod)(JsonInput.ReadToEnd)
+        simInfo = JsonConvert.DeserializeObject(Of clsSimInfo)(JsonInput.ReadToEnd)
 
-        If (simInfo.Msisdn <> "" And simInfo.IMSI <> "") Then
+        If (simInfo.OldMsisdn <> "" And simInfo.IMSI <> "") Then
             result.Code = "0"
             result.Description = "Successful"
-            result.stats = SleepingSwapInsert(simInfo.Msisdn, simInfo.IMSI)
+            result.stats = SleepingSwapInsert(simInfo.OldMsisdn, simInfo.IMSI)
         Else
             result.Code = "103"
             result.Description = "Failed"
@@ -105,5 +105,41 @@ Public Class SleepingSim
 
         End Try
         Return reserved
+    End Function
+    Private Function SleepingSwapInsert(Msisdn As String, IMSI As String) As clsSimInfo
+        Dim stats As New clsSimInfo
+        Dim StrSQL As String = "exec [simSwapweb].[dbo].[sleepingSwapInsert_20211012] '" & Msisdn & "','" & IMSI & "'"
+        Dim cn As New SqlConnection(connectionStringVas22)
+        Dim cmd As New SqlCommand
+        Try
+            Dim Dtstats As New DataTable
+            cmd.Connection = cn
+            cn.Open()
+            cmd = New SqlCommand(StrSQL, cn)
+            cmd.CommandType = CommandType.Text
+            cmd.CommandTimeout = Integer.MaxValue
+            Dtstats.Load(cmd.ExecuteReader())
+            If Dtstats.Rows.Count > 0 Then
+                For Each Dt In Dtstats.Rows
+
+
+
+                    stats.OldMsisdn = Dt.Item("OldMsisdn").ToString
+                    stats.Newmsisdn = Dt.Item("NewMsisdn").ToString
+                    stats.IMSI = Dt.Item("IMSI").ToString
+
+                Next
+
+            End If
+            cn.Dispose()
+            SqlConnection.ClearPool(cn)
+
+            cn.Close()
+            cn = Nothing
+
+        Catch ex As Exception
+
+        End Try
+        Return stats
     End Function
 End Class

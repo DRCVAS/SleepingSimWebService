@@ -29,4 +29,13 @@
         End Set
     End Property
 
+    Private strstats As clsSimInfo
+    Public Property stats As clsSimInfo
+        Get
+            Return strstats
+        End Get
+        Set(value As clsSimInfo)
+            strstats = value
+        End Set
+    End Property
 End Class

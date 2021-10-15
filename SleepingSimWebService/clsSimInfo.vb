@@ -1,22 +1,14 @@
 ﻿Public Class clsSimInfo
-    Private strMsisdn As String
-    Public Property Msisdn As String
+    Private strNewmsisdn As String
+    Public Property Newmsisdn As String
         Get
-            Return strMsisdn
+            Return strNewmsisdn
         End Get
         Set(value As String)
-            strMsisdn = value
+            strNewmsisdn = value
         End Set
     End Property
-    Private strImsi As String
-    Public Property Imsi As String
-        Get
-            Return strImsi
-        End Get
-        Set(value As String)
-            strImsi = value
-        End Set
-    End Property
+
     Private strOldMsisdn As String
     Public Property OldMsisdn As String
         Get
@@ -24,6 +16,16 @@
         End Get
         Set(value As String)
             strOldMsisdn = value
+        End Set
+    End Property
+
+    Private strIMSI As String
+    Public Property IMSI As String
+        Get
+            Return strIMSI
+        End Get
+        Set(value As String)
+            strIMSI = value
         End Set
     End Property
 End Class
