@@ -73,3 +73,4 @@ D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\bin\
 D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\bin\Microsoft.ApplicationInsights.xml
 D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\obj\Debug\SleepingSimWebService.vbproj.CopyComplete
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\obj\Debug\SleepingSimWebService.vbprojAssemblyReference.cache

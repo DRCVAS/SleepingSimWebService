@@ -72,3 +72,4 @@ D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\obj\
 D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\obj\Release\SleepingSimWebService.dll
 D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\obj\Release\SleepingSimWebService.xml
 D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\obj\Release\SleepingSimWebService.pdb
+D:\GitHub\sleepingSimWebservice\SleepingSimWebService\SleepingSimWebService\obj\Release\SleepingSimWebService.vbprojAssemblyReference.cache

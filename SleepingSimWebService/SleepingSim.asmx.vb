@@ -42,7 +42,7 @@ Public Class SleepingSim
         If (simInfo.OldMsisdn <> "" And simInfo.IMSI <> "") Then
             result.Code = "0"
             result.Description = "Successful"
-            result.ReservedMsisdn = SleepingSwapInsert(simInfo.OldMsisdn, simInfo.IMSI)
+            result.ReservedMsisdn = SleepingSwapInsert(simInfo.OldMsisdn)
         Else
             result.Code = "103"
             result.Description = "Failed"
@@ -55,6 +55,7 @@ Public Class SleepingSim
         HttpContext.Current.Response.Write(JsonConvert.SerializeObject(result))
 
     End Sub
+
 
     Private Function GetReservedNumber() As clsResult
 
@@ -106,10 +107,10 @@ Public Class SleepingSim
         End Try
         Return reserved
     End Function
-    Private Function SleepingSwapInsert(Msisdn As String, IMSI As String) As String
+    Private Function SleepingSwapInsert(Msisdn As String) As String
         Dim stats As New clsSimInfo
         Dim strstats As String = ""
-        Dim StrSQL As String = "exec [simSwapweb].[dbo].[sleepingSwapInsert_20211012] '" & Msisdn & "','" & IMSI & "'"
+        Dim StrSQL As String = "exec [simSwapweb].[dbo].[sleepingSwapInsertNewIvr] '" & Msisdn & "'"
         Dim cn As New SqlConnection(connectionStringVas22)
         Dim cmd As New SqlCommand
         Try
