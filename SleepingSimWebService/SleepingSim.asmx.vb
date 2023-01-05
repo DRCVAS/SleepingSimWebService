@@ -39,7 +39,7 @@ Public Class SleepingSim
         Dim JsonInput = New StreamReader(HttpContext.Current.Request.InputStream)
         simInfo = JsonConvert.DeserializeObject(Of clsSimInfo)(JsonInput.ReadToEnd)
 
-        If (simInfo.OldMsisdn <> "" And simInfo.IMSI <> "") Then
+        If (simInfo.OldMsisdn <> "") Then
             result.Code = "0"
             result.Description = "Successful"
             result.ReservedMsisdn = SleepingSwapInsert(simInfo.OldMsisdn)
